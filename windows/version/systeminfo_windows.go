@@ -173,7 +173,7 @@ func (d *DummyStructName) Architecture() string {
 
 // 是否为64位操作系统
 func (d *DummyStructName) IsWin64() bool {
-	return d.ProcessorArchitecture == WORD(PROCESSOR_ARCHITECTURE_AMD64) || d.ProcessorArchitecture != WORD(PROCESSOR_ARCHITECTURE_IA64)
+	return d.ProcessorArchitecture == WORD(PROCESSOR_ARCHITECTURE_AMD64) || d.ProcessorArchitecture == WORD(PROCESSOR_ARCHITECTURE_IA64)
 }
 
 // 处理器类型
